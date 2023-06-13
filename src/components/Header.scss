@@ -1,0 +1,20 @@
+$main-font: Monserrat;
+$main-colour: #FF6060;
+
+header {
+  display: flex;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-link {
+      color: $main-colour;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,19 @@
+@use 'Header';
+
+footer {
+  display:flex;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer-text {
+      font-family: Header.$main-colour;
+    }
+
+  }
+
+}
+

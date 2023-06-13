@@ -9,14 +9,16 @@ import {
 import '../App.css';
 
 import Header from './Header'
+import Footer from './Footer'
 
 
 function App() {
   return (
     <Routes>
       <Route path='/Header' element={<Header />} />
+      <Route path='/Footer' element={<Footer />} />
     </Routes>
-  )
+  );
 }
 
 export default App;
