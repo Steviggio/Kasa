@@ -1,21 +1,13 @@
-import React from "react"
-import Logo from "./assets/img/LOGO.png"
-import { NavLink } from "react-router-dom";
+import React from 'react';
 
 
-const Banner = () => {
-  <>
+function Banner() {
+  return (
     <div>
-      <img
-        src={Logo}
-        alt='Kasa Logo'
-      />
-      <nav>
-        <NavLink>Accueil</NavLink>
-        <NavLink>A propos</NavLink>
-      </nav>
+      <image className='banner-back-img' href="../assets/img/LOGO.png" alt='Kasa Logo' />
+      <span className=' '>Chez vous, partout et ailleurs</span>
     </div>
-  </>
-};
+  )
+}
 
-export default Banner;
+export default Banner
