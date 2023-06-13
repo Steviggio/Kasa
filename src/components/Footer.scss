@@ -2,6 +2,8 @@
 
 footer {
   display:flex;
+  justify-content: center;
+  background-color: black;
 
   .footer-container {
     display: flex;
@@ -9,8 +11,14 @@ footer {
     align-items: center;
     justify-content: center;
 
+    img {
+      height: 30px;
+      margin-top: 20px;
+    }
+
     .footer-text {
       font-family: Header.$main-colour;
+      color: white;
     }
 
   }

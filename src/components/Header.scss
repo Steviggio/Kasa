@@ -4,14 +4,26 @@ $main-colour: #FF6060;
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 20px ; 
+
+  img {
+    height: 60px;
+  }
 
   nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 50px;
 
     .nav-link {
       color: $main-colour;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
     }
 
   }

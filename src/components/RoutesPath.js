@@ -1,12 +1,11 @@
 import React from "react"
-
+import {Routes, Route} from 'react-router-dom'
+import Layout from "./Layout"
 
 function RoutesPath() {
   return (
     <Routes>
-      {/* <Route path='/Header' element={<Header />} /> */}
-      <Route path='/Body' element={<Main />} />
-      <Route path='/Footer' element={<Footer />} />
+      <Route path='/' element={<Layout />} />
     </Routes>
   )
 }
