@@ -2,7 +2,7 @@ import React from 'react';
 import '../Banner.scss'
 
 
-// Ajouter les éléments background et text en pré-requis de Banner
+// Ajouter les éléments background et text en pré-requis de Banner - Pas encre effectué
 function Banner() {
   return (
     <>
