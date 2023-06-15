@@ -1,17 +1,15 @@
 .banner-container {
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  width: 90%;
+  margin: 20px;
   height: 160px;
   border-radius: 20px;
-  box-sizing: content-box;
-  position:relative;
+  position: relative;
 
 
-  img {
+  .banner-back-img {
+    border-radius: 20px;
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -19,8 +17,19 @@
     // border-radius: 20px; need to check if its necessary
   }
 
-    .banner-text {
-      font-size: 50px;
-    }
+  .banner-text {
+    font-size: 4vw;
+    z-index: 0;
+    color: white;
+  }
+
+  .banner-shadow {
+    border-radius: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.3;
+  }
 
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
-import Banner from './Banner';
-import Main from './Main'
+import Home from './Home'
 
-function Layout () {
+function Layout() {
   return (
     <>
       <Header />
-      <Banner />
-      <Main />
+      <main>
+        <Home />
+      </main>
       <Footer />
     </>
   )

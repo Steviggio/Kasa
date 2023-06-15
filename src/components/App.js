@@ -7,7 +7,7 @@ import RoutesPath from './RoutesPath';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <RoutesPath />
     </div>
   );
