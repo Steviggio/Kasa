@@ -4,6 +4,7 @@ footer {
   display:flex;
   justify-content: center;
   background-color: black;
+  height: 209px;
 
   .footer-container {
     display: flex;
@@ -12,7 +13,7 @@ footer {
     justify-content: center;
 
     img {
-      height: 30px;
+      height: 4vh;
       margin-top: 20px;
     }
 

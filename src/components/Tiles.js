@@ -1,16 +1,16 @@
 import React from "react";
 import './Tiles.scss'
-import Test from '../assets/img/Rectangle.png'
+
 
 
 // élement image et text à rajouter en tant qu'argument de la fonction Tile
-function Tile(image, text) {
+function Tile(id, image, text) {
   return (
-    <div className='tiles-container'>
-    <img className='tiles-img' src={Test} />
-    <div className='tiles-shadow'></div>
-    <span className='tiles-title'>Titre de la location</span>
-  </div>
+    <div className='tiles-container' id={id}>
+      <img className='tiles-img' src={image} alt='Tiles' />
+      <div className='tiles-shadow'></div>
+      <span className='tiles-title'>{text}</span>
+    </div>
   )
 }
 

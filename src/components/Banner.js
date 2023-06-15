@@ -1,12 +1,12 @@
 import React from 'react';
 import '../Banner.scss'
-import Home from "../assets/img/home-img.png"
+
 
 // Ajouter les éléments background et text en pré-requis de Banner - Pas encre effectué
-function Banner() {
+function Banner(cover) {
   return (
     <div className='banner-container'>
-      <img src={Home} className='banner-back-img' alt='Kasa Logo' />
+      <img src={cover} className='banner-back-img' alt='Banner img' />
       <div className='banner-shadow'></div>
       <span className='banner-text'>Chez vous, rien à voir</span>
     </div>

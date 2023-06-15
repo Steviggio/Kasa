@@ -1,19 +1,25 @@
 import React from 'react';
-import './Home.scss'
-import RentList from '../assets/data/data.json'
-import Banner from './Banner'
-import Tile from './Tiles'
+import './Home.scss';
+import Flats from '../assets/data/data.json';
+import Banner from './Banner';
+import Tile from './Tiles';
+import Photo from "../assets/img/home-img.png";
 
-// Tiles aspect need to change the code from to another file
 function Home() {
   return (
     <div className='home'>
-      <Banner />
+      <Banner cover={Photo} />
       <div className='rent-container'>
-        <Tile /> <Tile /> <Tile /> <Tile /> <Tile /> 
+        {Flats.map((flat) => (
+          <Tile
+            key={flat.id}
+            image={flat.cover}
+            text={flat.title}
+          />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
