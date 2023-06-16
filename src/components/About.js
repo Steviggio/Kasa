@@ -1,11 +1,12 @@
 import React from "react";
 import Banner from './Banner';
+import aboutImage from "../assets/img/about-img.png";
 import './About.scss';
 
 function About() {
   return (
     <div className="about">
-      <Banner />
+      <Banner cover={aboutImage}/>
       <div className="about-container">
     
       </div>

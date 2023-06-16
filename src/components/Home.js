@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Tile from './Tiles';
 import Photo from "../assets/img/home-img.png";
 
+// Home page of the App
 function Home() {
   return (
     <div className='home'>
