@@ -9,7 +9,7 @@ import Photo from "../assets/img/home-img.png";
 function Home() {
   return (
     <div className='home'>
-      <Banner cover={Photo} />
+      <Banner cover={Photo} text="Chez vous, partout et ailleurs"/>
       <div className='rent-container'>
         {Flats.map((flat) => (
           <Tile

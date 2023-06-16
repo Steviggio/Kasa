@@ -6,7 +6,7 @@ import './About.scss';
 function About() {
   return (
     <div className="about">
-      <Banner cover={aboutImage}/>
+      <Banner cover={aboutImage} text=''/>
       <div className="about-container">
     
       </div>
