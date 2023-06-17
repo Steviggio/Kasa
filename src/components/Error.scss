@@ -1,0 +1,27 @@
+@use '../App';
+
+
+.error-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .error-number {
+    font-family: App.$font-stack;
+    font-size: 15em;
+  }
+
+  .error-text {
+    font-size: 2.80em;
+  }
+
+  .error-navlink {
+    font-size: 1.25em;
+    margin-bottom: 130px;
+  }
+}
+
+.error-div * {
+  margin: 60px 0;
+  color: App.$main-colour
+}

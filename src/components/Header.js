@@ -6,15 +6,13 @@ import "./Header.scss"
 
 function Header() {
   return (
-    <>
-      <header>
-        <img src={logo} alt='Kasa Logo' />
-        <nav>
-          <NavLink className="nav-link">Accueil</NavLink>
-          <NavLink className="nav-link">A propos</NavLink>
-        </nav>
-      </header>
-    </>
+    <header>
+      <img src={logo} alt='Kasa Logo' />
+      <nav>
+        <NavLink to='/' className="nav-link">Accueil</NavLink>
+        <NavLink to='./About' className="nav-link">A propos</NavLink>
+      </nav>
+    </header>
   );
 }
 

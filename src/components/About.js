@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from './Banner';
 import aboutImage from "../assets/img/about-img.png";
-import './About.scss';
 import Dropdown from "./Dropdown";
 
 function About() {
