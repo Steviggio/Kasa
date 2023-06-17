@@ -1,11 +1,10 @@
-$main-font: Monserrat;
-$main-colour: #FF6060;
+@use "../App";
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px ; 
+  margin: 20px 80px;
 
   img {
     height: 6vh;
@@ -17,7 +16,7 @@ header {
     gap: 50px;
 
     .nav-link {
-      color: $main-colour;
+      color: App.$main-colour;
       text-decoration: none;
       font-weight: 500;
     }

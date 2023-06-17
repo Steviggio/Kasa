@@ -1,4 +1,4 @@
-@use 'Header';
+@use '../App';
 
 footer {
   display:flex;
@@ -18,7 +18,7 @@ footer {
     }
 
     .footer-text {
-      font-family: Header.$main-colour;
+      font-family: App.$main-colour;
       color: white;
     }
 

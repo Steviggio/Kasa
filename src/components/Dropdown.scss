@@ -1,0 +1,46 @@
+@use "../App";
+
+.dropdown-container {
+  margin: 30px auto;
+  width: 70%;
+
+
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    background-color: App.$main-colour;
+    border-radius: 5px;
+
+    .dropdown-title {
+      font-family: App.$font-stack 400;
+      font-size: 18px;
+      flex: 1;
+      color: white;
+    }
+
+    .dropdown-arrow {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      transform: rotate(-45deg);
+      transition: transform 0.3s;
+    }
+
+    .dropdown-arrow.open {
+      transform: rotate(135deg);
+    }
+  }
+
+  .dropdown-content {
+    font-family: App.$font-stack 400;
+    background: App.$dropdown-background;
+    color: App.$main-colour;
+    padding: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
