@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Carousel.scss'
 
 
-function Carousel({ images }) {
+function Carousel({ images, id }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -17,7 +17,7 @@ function Carousel({ images }) {
   return (
     <div className='carousel-container'>
       <span onClick={goToPreviousImage} className='carousel-arrow left-arrow'></span>
-      <img src={images} className='carousel-img'></img>
+      <img key={id} src={images} className='carousel-img'></img>
       <span onClick={goToNextImage} className='carousel-arrow right-arrow'></span>
     </div>
   )

@@ -2,6 +2,7 @@
 
 
 .carousel-container {
+  position: relative;
   display: flex;
   background-color: red;
   height: 500px;
@@ -20,10 +21,19 @@
   }
 
   .left-arrow {
+    position: relative;
     transform: rotate(-135deg);
+    
   }
   .right-arrow {
+    position: relative;
     transform: rotate(45deg);
+  }
+
+  .carousel-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
   }
 
 }
