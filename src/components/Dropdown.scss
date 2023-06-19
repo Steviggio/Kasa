@@ -39,8 +39,9 @@
     font-family: App.$font-stack 400;
     background: App.$dropdown-background;
     color: App.$main-colour;
-    padding: 8px;
+    padding: 18px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    line-height: 1.25em;
   }
 }

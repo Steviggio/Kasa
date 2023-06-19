@@ -23,11 +23,13 @@
   .left-arrow {
     position: relative;
     transform: rotate(-135deg);
-    
+    left: 80px;
+    z-index: 1;
   }
   .right-arrow {
     position: relative;
     transform: rotate(45deg);
+    right: 80px
   }
 
   .carousel-img {
