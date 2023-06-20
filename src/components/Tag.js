@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Tag.scss";
 
-function Tag({tag, id}) {
+function Tag({tag}) {
   return (
     <div className='tag-container'>
-      <span className='tag-text' key={id}>{tag}</span>
+      <span className='tag-text'>{tag}</span>
     </div>
   )
 }

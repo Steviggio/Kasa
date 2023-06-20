@@ -1,26 +1,38 @@
 import React, { useState } from 'react';
-import './Carousel.scss'
+import './Carousel.scss';
+// import Flats from '../assets/data/data.json'
 
+function Carousel({pictures}) {
 
-function Carousel({ images, id }) {
-
+  const pictureLength = pictures.length;
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const goToNextImage = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+  const handleNextImage = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % pictureLength);
   };
 
-
-  const goToPreviousImage = () => { setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length) }
-    ;
+  const handlePrevImage = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + pictureLength) % pictureLength);
+  };
 
   return (
+
     <div className='carousel-container'>
-      <span onClick={goToPreviousImage} className='carousel-arrow left-arrow'></span>
-      <img key={id} src={images} className='carousel-img'></img>
-      <span onClick={goToNextImage} className='carousel-arrow right-arrow'></span>
+      {
+        pictureLength > 1 && <div className='left-arrow' onClick={handlePrevImage} />
+      }
+      {
+        pictures.map((picture, flat_id) => {
+          return (
+            <img key={flat_id} src={picture} className='carousel-img' alt='flat' />
+          )
+        })
+      }
+      {
+        pictureLength > 1 && <div className='right-arrow' onClick={handleNextImage} />
+      }
     </div>
-  )
+  );
 }
 
 export default Carousel

@@ -6,6 +6,9 @@ import About from './About';
 import Error from "./Error";
 import Carousel from "./Carousel";
 import Tag from './Tag';
+import Flat from "./Flat";
+
+
 
 function RoutesPath() {
   return (
@@ -13,10 +16,11 @@ function RoutesPath() {
       <Route path='/' element={<Layout Page={<Home />} />} />
       <Route path='/About' element={<Layout Page={<About />} />} />
       <Route path="*" element={<Layout Page={<Error />} />} />
-      <Route path='/Carousel' element={<Layout Page={<Carousel />} />} />
+      <Route path='/Carousel/:id' element={<Layout Page={<Carousel />} />} />
       <Route path='/Tag' element={<Layout Page={<Tag tag='Le tag' />} />} />
+      <Route path='/Flat' element={<Layout Page={<Flat />} />} />
     </Routes>
-  )
+  );
 }
 
 export default RoutesPath
