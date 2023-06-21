@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.scss';
-import RoutesPath from './RoutesPath';
+import './App.scss';
+import RoutesPath from './Routes/RoutesPath';
 
 
 

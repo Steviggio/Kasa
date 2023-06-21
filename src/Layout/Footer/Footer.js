@@ -1,5 +1,5 @@
 import React from "react";
-import white from "../assets/img/white-logo.png"
+import white from "../../assets/img/white-logo.png"
 import "./Footer.scss"
 
 function Footer() {

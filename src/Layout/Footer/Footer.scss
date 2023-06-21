@@ -1,4 +1,4 @@
-@use '../App';
+@use '../../App.scss';
 
 footer {
   display:flex;
@@ -18,7 +18,7 @@ footer {
     }
 
     .footer-text {
-      font-family: App.$main-colour;
+      font-family: App.$main-color;
       color: white;
     }
 

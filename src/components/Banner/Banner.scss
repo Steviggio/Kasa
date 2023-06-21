@@ -1,4 +1,4 @@
-$text-color: white;
+@use '../../App.scss';
 
 
 .banner-container {
@@ -23,7 +23,7 @@ $text-color: white;
   .banner-text {
     font-size: 3vw;
     z-index: 0;
-    color: $text-color;
+    color: App.$banner-text-color;
   }
 
   .banner-shadow {

@@ -1,4 +1,4 @@
-@use '../App';
+@use '../../App.scss';
 
 
 .error-div {
@@ -23,5 +23,5 @@
 
 .error-div * {
   margin: 60px 0;
-  color: App.$main-colour
+  color: App.$main-color
 }

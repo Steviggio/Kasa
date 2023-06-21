@@ -1,4 +1,4 @@
-@use "../App";
+@use "../../App";
 
 .dropdown-container {
   margin: 30px auto;
@@ -10,7 +10,7 @@
     align-items: center;
     padding: 8px;
     cursor: pointer;
-    background-color: App.$main-colour;
+    background-color: App.$main-color;
     border-radius: 5px;
 
     .dropdown-title {
@@ -38,7 +38,7 @@
   .dropdown-content {
     font-family: App.$font-stack 400;
     background: App.$dropdown-background;
-    color: App.$main-colour;
+    color: App.$main-color;
     padding: 18px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;

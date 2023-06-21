@@ -1,7 +1,9 @@
 import React from "react";
 
-function Place_info () {
+function Flat_info () {
   return (
     <div></div>
   )
 }
+
+export default Flat_info

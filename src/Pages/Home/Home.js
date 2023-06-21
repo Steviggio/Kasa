@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.scss';
-import Flats from '../assets/data/data.json';
-import Banner from './Banner';
-import Tile from './Tiles';
-import Photo from "../assets/img/home-img.png";
+import Flats from '../../assets/data/data.json';
+import Banner from '../../components/Banner/Banner';
+import Tile from '../../components/Tiles/Tiles';
+import Photo from "../../assets/img/home-img.png";
+import { NavLink } from 'react-router-dom';
 
 // Home page of the App
 function Home() {

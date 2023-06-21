@@ -1,4 +1,4 @@
-@use "../App";
+@use '../../App.scss';
 
 header {
   display: flex;
@@ -16,7 +16,7 @@ header {
     gap: 50px;
 
     .nav-link {
-      color: App.$main-colour;
+      color: App.$main-color;
       text-decoration: none;
       font-weight: 500;
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Banner.scss'
+import './Banner.scss'
 
 
 // Ajouter les éléments background et text en pré-requis de Banner - Pas encre effectué
