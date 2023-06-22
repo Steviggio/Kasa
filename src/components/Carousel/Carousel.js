@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Carousel.scss';
-// import Flats from '../assets/data/data.json'
+import leftArrow from '../../assets/img/left-arrow.png';
+import rightArrow from '../../assets/img/right-arrow.png'
 
-function Carousel({pictures}) {
-
+function Carousel({ pictures }) {
   const pictureLength = pictures.length;
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -15,24 +15,14 @@ function Carousel({pictures}) {
     setActiveIndex((prevIndex) => (prevIndex - 1 + pictureLength) % pictureLength);
   };
 
-  return (
 
+  return (
     <div className='carousel-container'>
-      {
-        pictureLength > 1 && <div className='left-arrow' onClick={handlePrevImage} />
-      }
-      {
-        pictures.map((picture, flat_id) => {
-          return (
-            <img key={flat_id} src={picture} className='carousel-img' alt='flat' />
-          )
-        })
-      }
-      {
-        pictureLength > 1 && <div className='right-arrow' onClick={handleNextImage} />
-      }
+      {pictureLength > 1 && <img src={leftArrow} className='arrows left-arrow' onClick={handlePrevImage} />}
+      <img src={pictures[activeIndex]} className='carousel-img' alt='flat' />
+      {pictureLength > 1 && <img src={rightArrow} className='arrows right-arrow' onClick={handleNextImage} />}
     </div>
   );
 }
 
-export default Carousel
+export default Carousel;

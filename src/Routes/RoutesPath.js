@@ -16,9 +16,9 @@ function RoutesPath() {
       <Route path='/' element={<Layout Page={<Home />} />} />
       <Route path='/About' element={<Layout Page={<About />} />} />
       <Route path="*" element={<Layout Page={<Error />} />} />
-      <Route path='/Flat/:id' element={<Layout Page={<Carousel />} />} />
+      <Route path='/Flat/:id' element={<Layout Page={<Flat />} />} />
       <Route path='/Tag' element={<Layout Page={<Tag tag='Le tag' />} />} />
-      <Route path='/Flat' element={<Layout Page={<Flat />} />} />
+      {/* <Route path='/Flat' element={<Layout Page={<Flat />} />} /> */}
     </Routes>
   );
 }

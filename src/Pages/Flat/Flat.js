@@ -17,9 +17,9 @@ function Flat() {
 
 
   return (
-    <> {flat ? (
+    <>
       <div className='carousel-flat-container'>
-        <Carousel images={flat.pictures} />
+        <Carousel pictures={flat.pictures} />
         <div>
           <div>
             <h1>Titre de l'appartement</h1>
@@ -31,7 +31,7 @@ function Flat() {
           </div>
         </div>
         <div className='tag-stars-container'>
-          <div className='tag-container'>
+          <div className='flat-tag-container'>
             {/* Itération sur les tag présents dans la liste associé à  l'appartement */}
             {flatTag}
           </div>
@@ -42,7 +42,7 @@ function Flat() {
         <Dropdown title='Équipements' description={Flats.map((flat) => (flat.equipments))} /> */}
         </div>
       </div>
-    ) : <Navigate replace to='/Error' />}
+
     </>
   )
 }
