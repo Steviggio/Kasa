@@ -36,5 +36,17 @@
     font-size: 1em;
   }
 }
+@media only screen and (max-width: 600px) {
+  .tiles-container {
+    height: 325px;
+    width: 325px;
 
-// }
+
+    .tiles-title {
+      display: flex;
+      width: 90%;
+      font-size: 1.10em;
+      bottom: 60px;
+    }
+  }
+}

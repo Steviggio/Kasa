@@ -36,3 +36,18 @@
   }
 
 }
+
+@media only screen and (max-width: 375px) {
+  .banner-container {
+    margin: 10px 0;
+    height: 111px;
+    width: 100%;
+    justify-content: flex-start;
+    
+    .banner-text {
+      margin-left: 15px;
+      font-size: 3.80vh;
+      width: 60%;
+    }
+  }
+}

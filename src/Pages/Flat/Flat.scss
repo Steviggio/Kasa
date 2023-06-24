@@ -4,16 +4,47 @@
 .carousel-flat-container {
   margin: 10px 80px;
 
-  .flat-informations-title {
-    color: App.$main-color;
-    font-family: App.$font-stack;
-    font-weight: 500;
+  .flat-host-container {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
+
+    .host-informations {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+      }
+
+      span {
+        color: App.$main-color;
+        font-family: App.$font-stack;
+        font-weight: 500;
+      }
+    }
   }
 
-  .flat-informations-location {
-    font-family: App.$font-stack;
-    font-weight: 500;
-    color: App.$main-color ;
+  .flat-informations {
+    width: 50%;
+
+    .flat-informations-title {
+      color: App.$main-color;
+      font-family: App.$font-stack;
+      font-weight: 500;
+      margin: 2px 0;
+    }
+
+    .flat-informations-location {
+      font-family: App.$font-stack;
+      font-weight: 500;
+      color: App.$main-color ;
+    }
   }
 
   .tag-stars-container {
@@ -24,11 +55,17 @@
       display: inline-flex;
       text-align: center;
       gap: 10px;
-      font-size: 13px;
+      font-size: 14px;
     }
 
     .stars-container {
-      background-color: black;
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 
@@ -40,11 +77,11 @@
     list-style: none;
     line-height: 21px;
 
-  .dropdown-content {
-    padding-right: 13px;
-    line-height: 23px;
-  }
-    
+    .dropdown-content {
+      padding-right: 13px;
+      line-height: 23px;
+    }
+
 
   }
 

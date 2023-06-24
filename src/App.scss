@@ -18,3 +18,10 @@ html, body {
   margin: 0 auto;
   width: 90%;
 }
+
+@media only screen and (max-width: 375px) {
+  
+  .App {
+    margin: 10px auto;
+  }
+}
