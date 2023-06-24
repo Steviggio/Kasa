@@ -10,7 +10,7 @@ function Header() {
       <img src={logo} alt='Kasa Logo' />
       <nav>
         <NavLink to='/' className="nav-link">Accueil</NavLink>
-        <NavLink to='./About' className="nav-link">A propos</NavLink>
+        <NavLink to='/About' className="nav-link">A propos</NavLink>
       </nav>
     </header>
   );

@@ -6,13 +6,13 @@
   width: 100%;
 
   .left-arrow {
-    position: relative;
-    left: 80px;
+    position: absolute;
+    left: 50px;
   }
 
   .right-arrow {
-    position: relative;
-    right: 80px;
+    position: absolute;
+    right: 50px;
   }
 
   .arrows {
@@ -25,6 +25,7 @@
     height: 415px;
     width: 100%;
     z-index: -1;
+    border-radius: 25px;
   }
 
 }

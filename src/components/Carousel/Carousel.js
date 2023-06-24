@@ -22,6 +22,7 @@ function Carousel({ pictures }) {
       <img src={pictures[activeIndex]} className='carousel-img' alt='flat' />
       {pictureLength > 1 && <img src={rightArrow} className='arrows right-arrow' onClick={handleNextImage} />}
     </div>
+    
   );
 }
 

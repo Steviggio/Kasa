@@ -2,5 +2,50 @@
 
 
 .carousel-flat-container {
-  margin: 10px auto;
+  margin: 10px 80px;
+
+  .flat-informations-title {
+    color: App.$main-color;
+    font-family: App.$font-stack;
+    font-weight: 500;
+  }
+
+  .flat-informations-location {
+    font-family: App.$font-stack;
+    font-weight: 500;
+    color: App.$main-color ;
+  }
+
+  .tag-stars-container {
+    display: flex;
+    justify-content: space-between;
+
+    .flat-tag-container {
+      display: inline-flex;
+      text-align: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+
+    .stars-container {
+      background-color: black;
+    }
+  }
+
+  .flat-dropdown-container {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 76px;
+    width: 100%;
+    list-style: none;
+    line-height: 21px;
+
+  .dropdown-content {
+    padding-right: 13px;
+    line-height: 23px;
+  }
+    
+
+  }
+
 }

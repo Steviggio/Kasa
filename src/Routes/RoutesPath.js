@@ -14,7 +14,7 @@ function RoutesPath() {
   return (
     <Routes>
       <Route path='/' element={<Layout Page={<Home />} />} />
-      <Route path='/About' element={<Layout Page={<About />} />} />
+      <Route exact path='/About' element={<Layout Page={<About />} />} />
       <Route path="*" element={<Layout Page={<Error />} />} />
       <Route path='/Flat/:id' element={<Layout Page={<Flat />} />} />
       <Route path='/Tag' element={<Layout Page={<Tag tag='Le tag' />} />} />

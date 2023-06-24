@@ -2,6 +2,7 @@ import React from "react";
 import Banner from '../../components/Banner/Banner';
 import aboutImage from "../../assets/img/about-img.png";
 import Dropdown from "../../components/Dropdown/Dropdown";
+import './About.scss'
 
 function About() {
   return (

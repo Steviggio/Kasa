@@ -1,9 +1,8 @@
 @use "../../App";
 
 .dropdown-container {
-  margin: 30px auto;
-  width: 70%;
-
+  margin: 30px 0;
+  width: 100%;
 
   .dropdown-header {
     display: flex;
@@ -36,12 +35,13 @@
   }
 
   .dropdown-content {
+    position: relative;
     font-family: App.$font-stack 400;
     background: App.$dropdown-background;
     color: App.$main-color;
-    padding: 18px;
+    padding: 18px 0px 18px 18px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    line-height: 1.25em;
+    line-height: 1.40em;
   }
 }

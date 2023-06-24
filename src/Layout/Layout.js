@@ -7,7 +7,7 @@ function Layout({ Page }) {
   return (
     <>
       <Header />
-      <main>
+      <main className='layout-main'>
         {Page}
       </main>
       <Footer />
