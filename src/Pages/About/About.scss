@@ -1,5 +1,37 @@
-
-.about-container {
+.about {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+
+  .about-container {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .about {
+    width: 90%;
+
+    .dropdown-container {
+      margin: 20px 0;
+
+      .dropdown-content {
+        padding: 20px;
+      }
+    }
+
+    .banner-container {
+      height: 270px;
+      margin: 10px 0;
+    }
+
+    .about-container {
+      width: 100%;
+    }
+
+    .about-banner {
+      margin: 0;
+    }
+  }
 }

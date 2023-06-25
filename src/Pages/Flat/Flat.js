@@ -12,18 +12,18 @@ function Flat() {
 
   const id = useParams();
   const flat = Flats.find((flat) => (flat.id === id.id))
-  
-  function generateStars (rating) {
+
+  function generateStars(rating) {
     const fullStars = Math.floor(rating);
     const emptyStars = 5 - fullStars;
 
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<img key={i} src={FullStar} alt='Full Star'/>);
+      stars.push(<img key={i} src={FullStar} alt='Full Star' />);
     }
 
-    for (let i= 0; i < emptyStars; i++) {
+    for (let i = 0; i < emptyStars; i++) {
       stars.push(<img key={i} src={EmptyStar} alt='Empty Star' />)
     }
 
@@ -34,8 +34,9 @@ function Flat() {
     return <Tag key={index} tag={tags} />
   })
 
-  const equipments = flat?.equipments.map((equipment, index) =>{
-  return <li key={index}>{equipment}</li>})
+  const equipments = flat?.equipments.map((equipment, index) => {
+    return <li key={index}>{equipment}</li>
+  })
 
 
 
@@ -47,22 +48,26 @@ function Flat() {
           <div className='flat-informations'>
             <h2 className='flat-informations-title'>{flat.title}</h2>
             <span className='flat-informations-location'>{flat.location}</span>
+            <div className='flat-tag-container'>
+              {/* Itération sur les tag présents dans la liste associé à  l'appartement */}
+              {flatTag}
+            </div>
           </div>
-          <div className='host-informations'>
-            <span>{flat.host.name}</span>
-            <img alt='Host portrait' src={flat.host.picture}/>
+          <div className='host-stars-informations'>
+            <div className='host-informations'>
+              <span>{flat.host.name}</span>
+              <img alt='Host portrait' src={flat.host.picture} />
+            </div>
+            <div className='stars-container'>{generateStars(Number(flat.rating))}</div>
           </div>
-        </div>
-        <div className='tag-stars-container'>
-          <div className='flat-tag-container'>
-            {/* Itération sur les tag présents dans la liste associé à  l'appartement */}
-            {flatTag}
-          </div>
-          <div className='stars-container'>{generateStars(Number(flat.rating))}</div>
+          {/* </div> */}
+          {/* <div className='tag-stars-container'> */}
+
+
         </div>
         <div className='flat-dropdown-container'>
-        <Dropdown className='dropdown-bars' title='Description' description={flat.description} />
-        <Dropdown className='dropdown-bars' title='Équipements' description={equipments} />
+          <Dropdown className='dropdown-bars left-up' title='Description' description={flat.description} />
+          <Dropdown className='dropdown-bars right-bottom' title='Équipements' description={equipments} />
         </div>
       </div>
 

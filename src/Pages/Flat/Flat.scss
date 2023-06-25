@@ -10,11 +10,28 @@
     width: 100%;
     margin: 15px 0;
 
-    .host-informations {
+    .host-stars-informations {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 15px;
+
+      .host-informations {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .stars-container {
+        display: flex;
+        gap: 12px;
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
 
       img {
         width: 64px;
@@ -32,10 +49,21 @@
 
   .flat-informations {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .flat-tag-container {
+      display: flex;
+      text-align: center;
+      gap: 10px;
+      font-size: 14px;
+    }
 
     .flat-informations-title {
       color: App.$main-color;
       font-family: App.$font-stack;
+      font-size: 2em;
       font-weight: 500;
       margin: 2px 0;
     }
@@ -44,6 +72,7 @@
       font-family: App.$font-stack;
       font-weight: 500;
       color: App.$main-color ;
+      margin-bottom: 20px;
     }
   }
 
@@ -51,22 +80,6 @@
     display: flex;
     justify-content: space-between;
 
-    .flat-tag-container {
-      display: inline-flex;
-      text-align: center;
-      gap: 10px;
-      font-size: 14px;
-    }
-
-    .stars-container {
-      display: flex;
-      gap: 10px;
-
-      img {
-        width: 24px;
-        height: 24px;
-      }
-    }
   }
 
   .flat-dropdown-container {
@@ -77,12 +90,121 @@
     list-style: none;
     line-height: 21px;
 
-    .dropdown-content {
-      padding-right: 13px;
-      line-height: 23px;
+
+    .dropdown-container {
+      margin: 0 0 50px 0;
+
+      .dropdown-content {
+        padding-right: 13px;
+        line-height: 23px;
+      }
     }
 
 
   }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .carousel-flat-container {
+    margin: 0 20px;
+
+    .carousel-container {
+      margin-top: 15px;
+      height: auto;
+    }
+
+    .carousel-img {
+      height: 300px;
+    }
+
+    .right-arrow {
+      height: 2.1em;
+      right: 15px;
+    }
+
+    .left-arrow {
+      height: 2.1em;
+      left: 15px;
+    }
+
+    .flat-host-container {
+      flex-direction: column;
+
+      .flat-informations {
+        width: 100%;
+        gap: 0;
+
+        .tag-container {
+          margin-top: 7px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 15px;
+          font-size: 10px;
+
+        }
+
+        .flat-informations-title {
+          font-size: 1.5em;
+        }
+
+        .flat-informations-location {
+          margin: 5px 0;
+          font-size: 0.9em;
+        }
+      }
+
+      .host-stars-informations {
+        margin-top: 22px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .host-informations {
+          justify-content: flex-end;
+          gap: 0;
+          order: 1;
+
+          span {
+            width: 50%;
+            font-size: 12px;
+          }
+
+          img {
+            height: 32px;
+            width: 32px;
+          }
+        }
+
+        .stars-container {
+
+          img {
+            height: 13px;
+            width: 13px;
+          }
+        }
+      }
+    }
+
+    .flat-dropdown-container {
+      display: flex;
+      flex-direction: column;
+
+      gap: 0px;
+
+      .dropdown-container {
+        margin: 10px 0;
+        font-size: 15px;
+      }
+
+      .dropdown-title {
+        font-size: 15px;
+      }
+    }
+  }
+
+
+
 
 }

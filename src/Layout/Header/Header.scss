@@ -29,8 +29,12 @@ header {
 
 @media only screen and (max-width: 600px) {
   header {
-    width: 100%;
-    margin: 10px auto;
+    margin: 10px 20px;
+
+
+    img {
+      height: 5vh;
+    }
 
     nav {
       gap:25px;
