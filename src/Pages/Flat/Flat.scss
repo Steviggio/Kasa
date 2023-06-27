@@ -105,7 +105,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   .carousel-flat-container {
     margin: 0 20px;
@@ -113,21 +113,23 @@
     .carousel-container {
       margin-top: 15px;
       height: auto;
+
+      .carousel-img {
+        height: 300px;
+      }
+
+      .right-arrow {
+        height: 2.1em;
+        right: 15px;
+      }
+
+      .left-arrow {
+        height: 2.1em;
+        left: 15px;
+      }
     }
 
-    .carousel-img {
-      height: 300px;
-    }
 
-    .right-arrow {
-      height: 2.1em;
-      right: 15px;
-    }
-
-    .left-arrow {
-      height: 2.1em;
-      left: 15px;
-    }
 
     .flat-host-container {
       flex-direction: column;
@@ -142,7 +144,7 @@
           justify-content: center;
           align-items: center;
           height: 15px;
-          font-size: 10px;
+          font-size: 9px;
 
         }
 
