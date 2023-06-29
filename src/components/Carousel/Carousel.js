@@ -18,11 +18,10 @@ function Carousel({ pictures }) {
 
   return (
     <div className='carousel-container'>
-      {pictureLength > 1 && <img src={leftArrow} className='arrows left-arrow' onClick={handlePrevImage} />}
+      {pictureLength > 1 && <img src={leftArrow} className='arrows left-arrow' alt="Left arrow" onClick={handlePrevImage} />}
       <img src={pictures[activeIndex]} className='carousel-img' alt='flat' />
-      {pictureLength > 1 && <img src={rightArrow} className='arrows right-arrow' onClick={handleNextImage} />}
+      {pictureLength > 1 && <img src={rightArrow} className='arrows right-arrow' alt='Right arrow' onClick={handleNextImage} />}
     </div>
-    
   );
 }
 
