@@ -67,7 +67,7 @@ function Flat() {
             <Dropdown title='Description' description={flat?.description} />
             <Dropdown title='Équipements' description={equipments} />
           </div>
-        </div>) : <Navigate to='/Error' />
+        </div>) : <Navigate replace to='/Error' />
       }
     </>
   )
