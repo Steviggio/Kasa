@@ -1,11 +1,13 @@
 import './Flat.scss';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Carousel from '../../components/Carousel/Carousel';
 import Flats from '../../assets/data/data.json';
 import Tag from '../../components/Tag/Tag';
 import FullStar from "../../assets/img/full-star.png";
 import EmptyStar from "../../assets/img/empty-star.png";
+import Error from '../Error/Error';
+
 
 function Flat() {
 
@@ -38,7 +40,9 @@ function Flat() {
     return <li key={index}>{equipment}</li>;
   });
 
-
+//  const loader = async () =>
+//   const flat = async getFlat();
+//   if 
 
 
   return (
@@ -67,7 +71,7 @@ function Flat() {
             <Dropdown title='Description' description={flat?.description} />
             <Dropdown title='Équipements' description={equipments} />
           </div>
-        </div>) : <Navigate replace to='/Error' />
+        </div>) : <Error/>
       }
     </>
   )
